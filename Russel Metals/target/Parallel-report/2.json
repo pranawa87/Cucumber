@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3382662857,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the browser",
+            "match": {
+              "location": "BrowserLaunch_SD.user_Launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4887456810,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goto Russel Metal Application",
+            "match": {
+              "location": "BrowserLaunch_SD.user_goto_Russel_Metal_Application()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "To test the functionality of login page",
+        "description": "",
+        "id": "test-russel-metal-inc.-application;to-test-the-functionality-of-login-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2064989,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login_Page_SD1.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 415277516,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters \"JAMESR\" and \"PEMBROKE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JAMESR",
+                  "offset": 13
+                },
+                {
+                  "val": "PEMBROKE",
+                  "offset": 26
+                }
+              ],
+              "location": "Login_Page_SD1.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85646990,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on Submit button of login page",
+            "match": {
+              "location": "Login_Page_SD1.user_clicks_on_Submit_button_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36985910,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message should be shown",
+            "match": {
+              "location": "Login_Page_SD1.error_message_should_be_shown()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test_-Ve"
+          }
+        ]
+      }
+    ],
+    "name": "Test Russel Metal Inc. Application",
+    "description": "",
+    "id": "test-russel-metal-inc.-application",
+    "keyword": "Feature",
+    "uri": "D:/pranawa/workspace-neon/Russel Metals/Login/login.feature"
+  }
+]
