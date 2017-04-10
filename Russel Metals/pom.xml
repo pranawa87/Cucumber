@@ -122,7 +122,7 @@
 							<glue>russel.StepDefination.Option1.IN451</glue>
 							<featuresDirectory>Login</featuresDirectory>
 							<cucumberOutputDir>target/Parallel-report</cucumberOutputDir>
-							<format>json,html</format>
+							<!-- <format>json,html</format> -->
 							<parallelScheme>SCENARIO</parallelScheme>
 							<!-- <parallelScheme>FEATURE</parallelScheme> -->
 
