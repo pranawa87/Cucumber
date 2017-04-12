@@ -74,8 +74,9 @@
 					<additionalClasspathElements>
 						<additionalClasspathElement>resources</additionalClasspathElement>
 					</additionalClasspathElements>
-					<forkCount>5</forkCount>
+					<forkCount>10</forkCount>
 					<reuseForks>true</reuseForks>
+
 					<includes>
 						<include>**/*IT.class</include>
 					</includes>
@@ -92,16 +93,17 @@
 						<phase>verify</phase>
 						<goals>
 							<goal>generate</goal>
-						</goals>
 
+						</goals>
 						<configuration>
-							<projectName>Russel Metals</projectName>
-							<outputDirectory>${project.build.directory}/target/cucumber-htmll-reports</outputDirectory>
-							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-							<skippedFails>true</skippedFails>
-							<enableFlashCharts>false</enableFlashCharts>
-							<buildNumber>124</buildNumber>
+							<parallelTesting>true</parallelTesting>
 						</configuration>
+
+						<!-- <configuration> <projectName>Russel Metals</projectName> <outputDirectory>${project.build.directory}/target/cucumber-html-reports</outputDirectory> 
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput> 
+							<skippedFails>true</skippedFails> <parallelTesting>true</parallelTesting> 
+							<enableFlashCharts>false</enableFlashCharts> <buildNumber>124</buildNumber> 
+							</configuration> -->
 					</execution>
 				</executions>
 			</plugin>
@@ -117,14 +119,15 @@
 						<goals>
 							<goal>generateRunners</goal>
 						</goals>
-
 						<configuration>
 							<glue>russel.StepDefination.Option1.IN451</glue>
 							<featuresDirectory>Login</featuresDirectory>
 							<cucumberOutputDir>target/Parallel-report</cucumberOutputDir>
-							<!-- <format>json,html</format> -->
-							<parallelScheme>SCENARIO</parallelScheme>
-							<!-- <parallelScheme>FEATURE</parallelScheme> -->
+							<format>json</format>
+							<monochrome>false</monochrome>
+						<!--	<parallelScheme>SCENARIO</parallelScheme>-->
+							<parallelScheme>FEATURE</parallelScheme> 
+
 
 						</configuration>
 					</execution>

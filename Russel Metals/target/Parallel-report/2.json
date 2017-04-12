@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3382662857,
+              "duration": 3169596064,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 4887456810,
+              "duration": 3803415973,
               "status": "passed"
             },
             "line": 5,
@@ -32,35 +32,13 @@
               "location": "BrowserLaunch_SD.user_goto_Russel_Metal_Application()"
             },
             "keyword": "When "
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "To test the functionality of login page",
-        "description": "",
-        "id": "test-russel-metal-inc.-application;to-test-the-functionality-of-login-page;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2064989,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User is on Login page",
-            "match": {
-              "location": "Login_Page_SD1.user_is_on_Login_page()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 415277516,
+              "duration": 273608615,
               "status": "passed"
             },
-            "line": 21,
+            "line": 6,
             "name": "User enters \"JAMESR\" and \"PEMBROKE\"",
             "match": {
               "arguments": [
@@ -75,41 +53,214 @@
               ],
               "location": "Login_Page_SD1.user_enters_and(String,String)"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 85646990,
+              "duration": 81499297,
               "status": "passed"
             },
-            "line": 22,
+            "line": 7,
             "name": "User clicks on Submit button of login page",
             "match": {
               "location": "Login_Page_SD1.user_clicks_on_Submit_button_of_login_page()"
             },
             "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "To test the functionality of Menu page",
+        "description": "",
+        "id": "test-russel-metal-inc.-application;to-test-the-functionality-of-menu-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2192511818,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on Menu page",
+            "match": {
+              "location": "ProgramMenuPage_SD.user_is_on_Menu_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 36985910,
+              "duration": 79421093,
               "status": "passed"
             },
-            "line": 23,
-            "name": "Error message should be shown",
+            "line": 12,
+            "name": "User clicks on first link for IN451 program",
             "match": {
-              "location": "Login_Page_SD1.error_message_should_be_shown()"
+              "arguments": [
+                {
+                  "val": "451",
+                  "offset": 32
+                }
+              ],
+              "location": "ProgramMenuPage_SD.user_clicks_on_first_link_for_IN_program(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117428,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User navigates to IN451 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "451",
+                  "offset": 20
+                }
+              ],
+              "location": "ProgramMenuPage_SD.user_navigates_to_IN_page(int)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+            "line": 9,
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1886863965,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the browser",
+            "match": {
+              "location": "BrowserLaunch_SD.user_Launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4497345607,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goto Russel Metal Application",
+            "match": {
+              "location": "BrowserLaunch_SD.user_goto_Russel_Metal_Application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312187930,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters \"JAMESR\" and \"PEMBROKE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JAMESR",
+                  "offset": 13
+                },
+                {
+                  "val": "PEMBROKE",
+                  "offset": 26
+                }
+              ],
+              "location": "Login_Page_SD1.user_enters_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85670432,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Submit button of login page",
+            "match": {
+              "location": "Login_Page_SD1.user_clicks_on_Submit_button_of_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "To test the functionality of Menu page",
+        "description": "",
+        "id": "test-russel-metal-inc.-application;to-test-the-functionality-of-menu-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2174612980,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on Menu page",
+            "match": {
+              "location": "ProgramMenuPage_SD.user_is_on_Menu_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5080501351,
+              "status": "passed"
+            },
             "line": 18,
-            "name": "@Test_-Ve"
+            "name": "User clicks on second link for IN451 program",
+            "match": {
+              "arguments": [
+                {
+                  "val": "451",
+                  "offset": 33
+                }
+              ],
+              "location": "ProgramMenuPage_SD.user_clicks_on_second_link_for_IN_program(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5114452281,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User navigates to IN451_option_two page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "451",
+                  "offset": 20
+                }
+              ],
+              "location": "ProgramMenuPage_SD.user_navigates_to_IN__option_two_page(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Second"
           }
         ]
       }
@@ -118,6 +269,6 @@
     "description": "",
     "id": "test-russel-metal-inc.-application",
     "keyword": "Feature",
-    "uri": "D:/pranawa/workspace-neon/Russel Metals/Login/login.feature"
+    "uri": "D:/pranawa/russel git/Russel Metals/Login/Menu.feature"
   }
 ]

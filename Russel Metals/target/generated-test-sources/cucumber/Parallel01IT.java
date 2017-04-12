@@ -5,9 +5,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = true,
-features = {"D:/pranawa/workspace-neon/Russel Metals/Login/login.feature:16"},
-plugin = {"json:target/Parallel-report/1.json", "html:target/Parallel-report/1.html"},
+features = {"D:/pranawa/russel git/Russel Metals/Login/login.feature"},
+plugin = {"json:target/Parallel-report/1.json"},
 monochrome = false,
-glue = { "russel.StepDefination.Option1.IN451" })
+ tags = {}, glue = { "russel.StepDefination.Option1.IN451" })
 public class Parallel01IT {
 }
